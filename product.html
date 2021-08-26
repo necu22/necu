@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/productStyle.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;1,400&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="main-wrapper">
+    <div class="white-background">
+        <a id="buttonTop"><i class="fas fa-arrow-up"></i></a>
+        <header>
+            <section class="header-top">
+                <a id="logoButton" href="index.html"><img src="img/logo.png" alt="Eco Food"></a>
+                <article>
+                    <a href="login.html" class="button" id="logInButton">Log in</a>
+                    <a id="show-card" href="#" class="cartLink" data-toggle="modal" data-target="#exampleModal">
+                        Cart <i class="fas fa-shopping-basket"></i> (<span id="count">0</span>)
+                    </a>
+                    <button id="clearCard" class="button">Clear card</button>
+                </article>
+            </section>
+            <nav id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" id="catalog">Catalog</a></li>                
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>               
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <button id="goBackButton" class="button">Go Back</button>
+            <section id="product">
+                <h3 id="product-name"></h3>
+                <img id="product-img"/>
+                <article>
+                    <p>Base price $5.00</p>
+                    <p>Base price for variant $5.00</p>
+                    <p><b><big>Sales price</big></b></p>
+                    <p><b><big>$4.75</big></b></p>
+                    <button class="button">Add to Cart</button>
+                </article>
+            </section>
+            <section>
+                <h3>REVIEWS</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique beatae
+                    tempora magnam enim ullam qui quidem quam mollitia,
+                    dolor iste, eius voluptatem eligendi saepe. Ratione ipsum quaerat sunt atque
+                    provident.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <section class="footer-section">
+                <article>
+                    <h3><i class="fas fa-cubes"></i> Think Different</h3>
+                    <p>Necu Shop: Because You’re Worth It.</p>
+                </article>
+                <article>
+                    <h3><i class="fas fa-tree"></i> Every Little Helps</h3>
+                    <p>Necu Shop: Because You’re Worth It.</p>
+                </article>
+                <article>
+                    <h3><i class="fab fa-codepen"></i> Shave Money</h3>
+                    <p>Necu Shop: Because You’re Worth It.</p>
+                </article>
+            </section>
+            <section class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/n.e.c.u/"><i class="fab fa-instagram"></i></a>
+            </section>
+            <p class="footer-copy-rights">&copy; All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="./js/jsProduct.js"></script>
+    <script src="./js/secondaryButtons.js"></script>
+    <script src="./js/script.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/v4-shims.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

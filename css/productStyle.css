@@ -1,0 +1,33 @@
+#product {
+    display: flex;
+    justify-content: center;
+}
+
+#product article {
+    align-self: center;
+}
+
+#product-img {
+    transition: all 0.5s;
+    margin: 30px;
+}
+
+#product-img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.logIn {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.logIn input[type="text"], .logIn input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.logIn input:invalid {
+  border: 2px solid red;
+}

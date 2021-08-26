@@ -1,0 +1,243 @@
+body, section, h1, h2, h3, article, div, a, p {
+    font-family: 'Nunito', sans-serif;
+}
+
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    font-size: 13px !important;
+    text-transform: uppercase;
+}
+
+/* -----------Parallax------------- */
+
+.main-wrapper {
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* -----------Parallax------------- */
+
+.white-background {
+    background: white;
+    margin: 50px 10%;
+    padding: 10px 40px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.cartLink {
+    color: black;
+    transition: all 0.5s;
+}
+
+.cartLink:hover {
+    text-decoration: none;
+    color: gray;
+    transition: all 0.5s;
+}
+
+#logoButton {
+    flex: 4;
+}
+
+#logoButton + article {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* -------- products --------*/
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products > h2 {
+    width: 100%;
+}
+
+.products > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.products button, .button {
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 0;
+    transition: all 0.5s;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.products button:hover, .button:hover {
+    background-color: gray;
+    color: white;
+    transition: all 0.5s;
+}
+
+.products button:active, .button:active {
+    background-color: gray !important;
+    border: none;
+}
+
+.products button:focus, .button:focus {
+    box-shadow: none !important;
+}
+
+.products img {
+    cursor: pointer;
+}
+
+/* ---------- subscribe --------- */
+
+.subscribe {
+    background: url(../img/empty-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 25%;
+}
+
+.subscribe > p {
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+
+}
+
+.button {
+    color: white;
+    padding: 6px 12px;
+}
+
+input[type="email"] {
+    padding: 6px 12px;
+    margin-bottom: 10px;
+}
+
+/* ---------- footer -----------*/
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section > article {
+    width: 300px;
+    margin: 20px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social > a {
+    margin: 10px;
+    color: white;
+    border: 10px solid black;
+    border-radius: 50%;
+    width: 45px;
+    text-align: center;
+    background: black;
+    transition: all 0.5s;
+}
+
+.footer-social > a:hover {
+    background: gray;
+    border-color: gray;
+    color: white;
+    transition: all 0.5s;
+}
+
+.footer-copy-rights {
+    text-align: center;
+}
+
+#buttonTop {
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonTop:hover {
+    cursor: pointer;
+    background-color: wheat;
+    color: black;
+}
+
+#buttonTop:active {
+    background-color: wheat;
+    color: black;
+}
+
+#buttonTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#hamburger {
+    display: none;
+}
+
+/*---------------hamburger-------------------*/
+@media only screen and (max-width: 425px) {
+    .white-background {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-wrapper {
+        background: none;
+    }
+
+    .active {
+        background-color: gray;
+        color: white;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-top > article {
+        margin-top: 40px;
+    }
+
+    #logoButton + article {
+        width: 90%;
+        align-items: center;
+    }
+}
+ .ab1 {
+     margin: 25px;
+     justify-content: center;
+     text-align: center;
+ }
